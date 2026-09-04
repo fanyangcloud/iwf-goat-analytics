@@ -42,10 +42,10 @@ iwf-goat-analytics/
 ### 2. 世界纪录（WR）对数边际收益递减模型
 针对冷战时期苏联等国体委奖励机制带来的“单公斤/半公斤刷单”现象，系统放弃线性累乘，引入对数边际递减函数：
 
-$$S_{\text{WR}}(N) = W_{\text{wr\_point}} \cdot S \cdot \ln(1 + k \cdot N)$$
+$$S_{\mathrm{WR}}(N) = W_{\mathrm{WR}} \cdot S \cdot \ln(1 + k \cdot N)$$
 
-* $N$：打破世界纪录总次数（`wr_count`）
-* $W_{\text{wr\_point}}$：滑动条动态基准权重（默认 $4.5$）
+* $N$：打破世界纪录总次数（系统字段 `wr_count`）
+* $W_{\mathrm{WR}}$：世界纪录基准权重（滑动条动态参数 `wr_point`，默认 $4.5$）
 * $S = 8.0$：尺度缩放因子，确保首次破纪录收益贴合基准
 * $k = 0.12$：曲率衰减系数，平滑收敛高频次刷单收益
 
@@ -62,7 +62,7 @@ $$S_{\text{WR}}(N) = W_{\text{wr\_point}} \cdot S \cdot \ln(1 + k \cdot N)$$
 
 ```bash
 # 1. 克隆并进入工程目录
-git clone https://github.com/your-username/iwf-goat-analytics.git
+git clone https://github.com/fanyangcloud/iwf-goat-analytics.git
 cd iwf-goat-analytics
 
 # 2. 运行工程启动器（自动绑定可用端口并调起浏览器）
