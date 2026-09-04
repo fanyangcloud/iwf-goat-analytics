@@ -4,6 +4,10 @@
 [![Python: 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![Zero Dependencies](https://img.shields.io/badge/Dependencies-Zero-emerald.svg)](#)
 
+[ [简体中文](README.md) | **English** ]
+
+---
+
 A cross-era quantitative valuation engine and interactive cockpit dedicated to evaluating the greatest weightlifters across all eras of the International Weightlifting Federation (IWF)—from the 1950s "Three-Lifts Golden Era" through the Paris 2024 Olympic Games.
 
 The platform catalogs 42 Hall of Fame legends and introduces a logarithmic marginal diminishing returns model to mitigate the statistical distortion caused by Cold War "0.5kg/1kg record-shaving," establishing an objective and scientifically rigorous GOAT evaluation benchmark.
@@ -46,10 +50,10 @@ During the Cold War, Soviet state bonuses from Goskomsport encouraged lifters to
 
 To counter linear record inflation ($WR \times 4.5$), this system implements a logarithmic marginal diminishing returns function:
 
-$$S_{\text{WR}}(N) = W_{\text{wr\_point}} \cdot S \cdot \ln(1 + k \cdot N)$$
+$$S_{\mathrm{WR}}(N) = W_{\mathrm{WR}} \cdot S \cdot \ln(1 + k \cdot N)$$
 
-* $N$: Total world records broken (`wr_count`)
-* $W_{\text{wr\_point}}$: Base slider weight parameter (default: $4.5$)
+* $N$: Total world records broken (system field `wr_count`)
+* $W_{\mathrm{WR}}$: Base slider weight parameter (system config `wr_point`, default: $4.5$)
 * $S = 8.0$: Scale factor ensuring initial record gains align with base scoring
 * $k = 0.12$: Curvature decay parameter dampening the marginal utility of excessive record accumulation
 
@@ -66,7 +70,7 @@ This project maintains a strict **Zero External Dependencies** philosophy, requi
 
 ```bash
 # 1. Clone the repository and enter the directory
-git clone https://github.com/your-username/iwf-goat-analytics.git
+git clone https://github.com/fanyangcloud/iwf-goat-analytics.git
 cd iwf-goat-analytics
 
 # 2. Run the bootstrapper (auto-probes available ports and launches browser)
