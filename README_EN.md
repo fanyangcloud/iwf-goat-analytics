@@ -12,6 +12,12 @@ A cross-era quantitative valuation engine and interactive cockpit dedicated to e
 
 The platform catalogs 42 Hall of Fame legends and introduces a logarithmic marginal diminishing returns model to mitigate the statistical distortion caused by Cold War "0.5kg/1kg record-shaving," establishing an objective and scientifically rigorous GOAT evaluation benchmark.
 
+
+
+<p align="center">
+  <img src="docs/assets/dashboard-preview.png" alt="IWF GOAT Analytics Dashboard" width="100%">
+</p>
+
 ---
 
 ## Architecture & Modular Decoupling

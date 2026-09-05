@@ -11,6 +11,12 @@
 
 面向国际举重联合会（IWF）全历史周期的跨时代量化排位与交互式数据驾驶舱。系统收录了自 1950 年代“推、抓、挺三项时代”至 2024 年巴黎奥运会以来的 42 位殿堂级举重巨星，通过对数边际递减模型平抑冷战时期“单公斤刷纪录”带来的数据通胀，建立严谨客观的 GOAT 评价体系。
 
+
+
+<p align="center">
+  <img src="docs/assets/dashboard-preview.png" alt="IWF GOAT Analytics Dashboard" width="100%">
+</p>
+
 ---
 
 ## 核心架构与模块解耦
