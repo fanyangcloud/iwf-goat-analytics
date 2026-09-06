@@ -1,61 +1,100 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-================================================================================
-IWF GOAT ANALYTICS SYSTEM - WEB SERVER & ROUTING LAYER
-架构职责：基于标准库的静态资产托管与 /api/calculate、/api/athletes 路由分发
-================================================================================
+web/server.py
+职责：提供 GOATRequestHandler 供 run.py 调度；
+      从 data/ 实时动态加载 JSON，并调用 engine/ 核心非线性量化引擎
 """
 
 import http.server
+import socketserver
 import json
 import os
-from pathlib import Path
-from typing import Tuple
+import sys
+import socket
+import webbrowser
+import threading
 
+# 路径定位：将项目根目录加入 sys.path，保证可以无缝导入 engine 模块
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
+DATA_DIR = os.path.join(BASE_DIR, "data")
+STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
+
+# 引入系统真理源：计算引擎与默认权重
 from engine.calculator import calculate_goat_rankings, load_athletes
-
-STATIC_DIR = Path(__file__).resolve().parent / "static"
-
+from engine.config import DEFAULT_WEIGHTS
 
 class GOATRequestHandler(http.server.SimpleHTTPRequestHandler):
-    """自定义静态资源与 RESTful API 请求处理器"""
-
-    def __init__(self, *args, **kwargs):
-        # 将静态资源根目录锁定至 web/static/
-        super().__init__(*args, directory=str(STATIC_DIR), **kwargs)
+    def __init__(self, *args, directory=None, **kwargs):
+        if directory is None:
+            directory = STATIC_DIR
+        super().__init__(*args, directory=directory, **kwargs)
 
     def log_message(self, format, *args):
-        """屏蔽默认请求刷屏日志，保持控制台整洁"""
         return
 
     def do_GET(self):
-        """处理只读请求：静态页面与全量运动员初次加载"""
         if self.path == "/api/athletes":
-            self._send_json(200, calculate_goat_rankings())
+            try:
+                # 严格调用 engine/ 边际递减量化核心
+                data = calculate_goat_rankings()
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
         else:
             super().do_GET()
 
     def do_POST(self):
-        """处理动态计算请求：接收自定义滑动条权重并即时计算返回"""
         if self.path == "/api/calculate":
-            content_length = int(self.headers.get("Content-Length", 0))
-            post_body = self.rfile.read(content_length)
+            content_len = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_len)
             try:
-                custom_weights = json.loads(post_body.decode("utf-8"))
-                rankings = calculate_goat_rankings(weights=custom_weights)
-                self._send_json(200, rankings)
-            except Exception as err:
-                self._send_json(400, {"error": str(err)})
+                weights = json.loads(body.decode("utf-8"))
+                # 动态滑块权重实时注入 engine 边际递减核心
+                data = calculate_goat_rankings(weights=weights)
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps(data, ensure_ascii=False).encode("utf-8"))
+            except Exception as e:
+                self.send_response(400)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
         else:
             self.send_response(404)
             self.end_headers()
 
-    def _send_json(self, status_code: int, data: object):
-        """标准化发送 JSON 响应头与 UTF-8 编码数据"""
-        payload = json.dumps(data, ensure_ascii=False).encode("utf-8")
-        self.send_response(status_code)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(payload)))
-        self.end_headers()
-        self.wfile.write(payload)
+# 兼容别名
+DataRequestHandler = GOATRequestHandler
+
+def run_server(port=8899):
+    for p in range(port, port + 50):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex(("127.0.0.1", p)) != 0:
+                port = p
+                break
+                
+    server_address = ("127.0.0.1", port)
+    socketserver.TCPServer.allow_reuse_address = True
+    with socketserver.ThreadingTCPServer(server_address, GOATRequestHandler) as httpd:
+        url = f"http://127.0.0.1:{port}"
+        print(f"[IWF Server] 启动成功: {url}")
+        threading.Timer(0.8, lambda: webbrowser.open(url)).start()
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\n[IWF Server] 服务已退出。")
+            httpd.server_close()
+
+if __name__ == "__main__":
+    run_server()
