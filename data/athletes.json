@@ -649,14 +649,14 @@
       "bronze": 1
     },
     "cc": {
-      "gold": 2,
+      "gold": 3,
       "silver": 0,
-      "bronze": 1
+      "bronze": 0
     },
     "cg": {
       "gold": 2,
       "silver": 0,
-      "bronze": 0
+      "bronze": 1
     },
     "wr_count": 16,
     "peak_note": "雅典奥运挺举263.5kg / 抓举213kg / 472.5kg 总成绩",
@@ -779,7 +779,7 @@
   {
     "id": "shi-zhiyong-93",
     "name": "Shi Zhiyong (1993)",
-    "name_zh": "石智勇 (大)",
+    "name_zh": "石智勇 (小)",
     "gender": "M",
     "nation": "CHN",
     "era_category": "2000-PRESENT",
@@ -1289,7 +1289,7 @@
     },
     "wr_count": 11,
     "peak_note": "挺举142kg @ 59kg / 总成绩247kg / 连续三届奥运会登上领奖台",
-    "peak_coefficient": 103.0,
+    "peak_coefficient": 104.0,
     "summary": "女子59kg级传奇，横跨三届奥运夺牌，5座世锦赛大金牌，亚洲举重骄傲。",
     "peak_note_en": "C&J 142kg @ 59kg / Total 247kg WR / Medaled across 3 consecutive Olympic Games",
     "summary_en": "Kuo Hsing-chun (TPE), competing in 58kg / 59kg. 1x Olympic Gold Medalist, 5x World Champion with 11 official World Records broken. Widely celebrated as an all-time pillar of the sport."
@@ -1326,7 +1326,7 @@
     },
     "wr_count": 8,
     "peak_note": "雅典2004与北京2008首位卫冕女子举重奥运金牌选手的历史破局者",
-    "peak_coefficient": 102.5,
+    "peak_coefficient": 105,
     "summary": "第一位卫冕女子奥运举重桂冠的王者，大场面极其沉着稳定。",
     "peak_note_en": "First female lifter to defend Olympic Gold back-to-back (Athens 2004 & Beijing 2008)",
     "summary_en": "Chen Yanqing (CHN), competing in 58kg. 2x Olympic Gold Medalist, 2x World Champion with 8 official World Records broken. Widely celebrated as an all-time pillar of the sport."
@@ -1459,22 +1459,22 @@
     },
     "wc": {
       "gold": 1,
-      "silver": 3,
+      "silver": 2,
       "bronze": 1
     },
     "cc": {
-      "gold": 2,
-      "silver": 0,
+      "gold": 1,
+      "silver": 1,
       "bronze": 0
     },
     "cg": {
       "gold": 1,
       "silver": 0,
-      "bronze": 0
+      "bronze": 1
     },
-    "wr_count": 2,
+    "wr_count": 3,
     "peak_note": "伦敦2012(69kg)与里约2016(75kg)两跨级别夺奥运金牌 / 意志力代名词",
-    "peak_coefficient": 103.0,
+    "peak_coefficient": 106.0,
     "summary": "朝鲜女子功勋，克服严重髋部伤病跨级别夺金，精神意志力极为顽强。",
     "peak_note_en": "London 2012 (69kg) & Rio 2016 (75kg) Olympic Gold across two weight categories",
     "summary_en": "Rim Jong-sim (PRK), competing in 69kg / 75kg / 76kg. 2x Olympic Gold Medalist, 1x World Champion with 2 official World Records broken. Widely celebrated as an all-time pillar of the sport."
@@ -1505,7 +1505,7 @@
       "bronze": 0
     },
     "cg": {
-      "gold": 1,
+      "gold": 2,
       "silver": 0,
       "bronze": 0
     },
@@ -2066,7 +2066,7 @@
     },
     "wr_count": 15,
     "peak_note": "抓举117kg / 挺举147kg / 总成绩262kg @ 63kg与261kg @ 64kg保持断层统治 / 15次打破世界纪录",
-    "peak_coefficient": 108.0,
+    "peak_coefficient": 106.0,
     "summary": "女子中量级技术与力量的代名词，横跨两个体重级别，以五夺世锦赛大金牌和里约奥运破WR夺冠统治赛场数载。",
     "peak_note_en": "Snatch 117kg / C&J 147kg / Total 262kg @ 63kg & 261kg @ 64kg / 15 World Records",
     "summary_en": "Deng Wei (CHN), competing in 58kg / 63kg / 64kg. 1x Olympic Gold Medalist, 5x World Champion with 15 official World Records broken. Widely celebrated as an all-time pillar of the sport."
@@ -2144,5 +2144,264 @@
     "summary": "菲律宾国民英雄，跨越四届奥运会，夺得菲律宾历史上首枚奥运金牌并加冕世锦赛世界冠军。",
     "peak_note_en": "First Olympic Gold Medalist in Philippine history / Snatch 97kg / C&J 127kg (OR)",
     "summary_en": "Hidilyn Diaz (PHI), competing in 53kg / 55kg. 1x Olympic Champion, 1x World Champion. Widely celebrated as an all-time pillar of the sport."
-  }
+  },
+  {
+  "id": "li-ping",
+  "name": "Li Ping",
+  "name_zh": "李萍",
+  "gender": "F",
+  "nation": "CHN",
+  "era_category": "2000-PRESENT",
+  "weight_group": "MIDDLE",
+  "active_years": "2005-2017",
+  "best_class": "53kg / 58kg",
+  "og": {
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 2,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cc": {
+    "gold": 3,
+    "silver": 0,
+    "bronze": 1
+  },
+  "cg": {
+    "gold": 2,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wr_count": 3,
+  "peak_note": "抓举103kg / 挺举129kg / 总成绩230kg @ 53kg (曾同时包揽该级别抓举、挺举与总成绩全部三项世界纪录)",
+  "peak_coefficient": 102.5,
+  "summary": "女子53公斤级历史级名将，两夺世锦赛总成绩金牌，蝉联两届亚运会冠军，曾实现抓/挺/总三项世界纪录的大满贯包揽。",
+  "peak_note_en": "Snatch 103kg / C&J 129kg / Total 230kg @ 53kg (Held all three World Records simultaneously in the 53kg division)",
+  "summary_en": "Li Ping (CHN), competing in 53kg / 58kg. 2x World Champion, 2x Asian Games Champion, and 3x Asian Champion who held all three official World Records (snatch, clean & jerk, total) in the women's 53kg class."
+},
+{
+  "id": "ilya-ilyin",
+  "name": "Ilya Ilyin",
+  "name_zh": "伊利亚·伊林",
+  "gender": "M",
+  "nation": "KAZ",
+  "era_category": "2000-PRESENT",
+  "weight_group": "HEAVY",
+  "active_years": "2005-2020",
+  "best_class": "85kg / 94kg / 105kg",
+  "og": {
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 4,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cc": {
+    "gold": 0,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cg": {
+    "gold": 2,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wr_count": 3,
+  "peak_note": "抓举191kg / 挺举246kg / 总成绩437kg @ 105kg (2015俄罗斯总统杯创下历史级挺举与总成绩世界纪录)",
+  "peak_coefficient": 107.5,
+  "summary": "哈萨克斯坦举重传奇，曾创下国际赛场十年全胜神话，四夺世锦赛总成绩金牌与两届亚运会冠军，横跨三个级别展现极高统治力。",
+  "peak_note_en": "Snatch 191kg / C&J 246kg / Total 437kg @ 105kg (Set historic Clean & Jerk and Total World Records at the 2015 President's Cup)",
+  "summary_en": "Ilya Ilyin (KAZ), competing in 85kg / 94kg / 105kg. 4x World Champion and 2x Asian Games Champion who maintained an undefeated international platform streak for a decade across three bodyweight classes."
+},
+{
+  "id": "zhang-guozheng",
+  "name": "Zhang Guozheng",
+  "name_zh": "张国政",
+  "gender": "M",
+  "nation": "CHN",
+  "era_category": "2000-PRESENT",
+  "weight_group": "MIDDLE",
+  "active_years": "1999-2008",
+  "best_class": "69kg",
+  "og": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 3,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cc": {
+    "gold": 1,
+    "silver": 1,
+    "bronze": 0
+  },
+  "cg": {
+    "gold": 2,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wr_count": 1,
+  "peak_note": "抓举160kg / 挺举197.5kg(WR) / 总成绩352.5kg @ 69kg (男子69公斤级集奥运会、世锦赛、亚运会、亚锦赛、全运会于一身的“大满贯”得主)",
+  "peak_coefficient": 106.0,
+  "summary": "中国男子举重标志性名宿，男子69公斤级大满贯霸主，夺得雅典奥运会金牌、3次世锦赛总成绩金牌及2届亚运会冠军，曾以下蹲挺技术创下197.5公斤挺举世界纪录。",
+  "peak_note_en": "Snatch 160kg / C&J 197.5kg (WR) / Total 352.5kg @ 69kg (Achieved the historic Grand Slam in the men's 69kg class)",
+  "summary_en": "Zhang Guozheng (CHN), competing in 69kg. 2004 Olympic Champion, 3x World Champion, and 2x Asian Games Champion who set a historic clean & jerk World Record of 197.5kg with his signature squat jerk."
+},
+{
+  "id": "lu-yong",
+  "name": "Lu Yong",
+  "name_zh": "陆永",
+  "gender": "M",
+  "nation": "CHN",
+  "era_category": "2000-PRESENT",
+  "weight_group": "MIDDLE",
+  "active_years": "2005-2012",
+  "best_class": "85kg",
+  "og": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 1,
+    "silver": 1,
+    "bronze": 0
+  },
+  "cc": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cg": {
+    "gold": 1,
+    "silver": 1,
+    "bronze": 0
+  },
+  "wr_count": 0,
+  "peak_note": "抓举180kg / 挺举214kg / 总成绩394kg @ 85kg (2008北京奥运凭体重优势平总成绩世界纪录绝杀夺冠，实现中国男举中大级别历史性突破)",
+  "peak_coefficient": 104.0,
+  "summary": "中国男子举重中大级别里程碑式领军人物，男子85公斤级大满贯霸主，2008北京奥运会经典战役夺金，并集齐世锦赛、亚运会与亚锦赛金牌。",
+  "peak_note_en": "Snatch 180kg / C&J 214kg / Total 394kg @ 85kg (Equaled the Total World Record to claim gold at the 2008 Beijing Olympics on bodyweight tiebreaker)",
+  "summary_en": "Lu Yong (CHN), competing in 85kg. 2008 Olympic Champion, 2009 World Champion, 2010 Asian Games Champion, and 2011 Asian Champion, achieving a Grand Slam and China's historic first Olympic gold in men's heavier weight classes."
+},
+{
+  "id": "behdad-salimi",
+  "name": "Behdad Salimi",
+  "name_zh": "贝赫达德·萨利米",
+  "gender": "M",
+  "nation": "IRI",
+  "era_category": "2000-PRESENT",
+  "weight_group": "HEAVY",
+  "active_years": "2009-2018",
+  "best_class": "+105kg",
+  "og": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 2,
+    "silver": 1,
+    "bronze": 1
+  },
+  "cc": {
+    "gold": 3,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cg": {
+    "gold": 3,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wr_count": 2,
+  "peak_note": "抓举216kg(WR) / 挺举255kg / 总成绩465kg @ +105kg (曾两度打破超重量级抓举世界纪录，豪取亚运会三连冠)",
+  "peak_coefficient": 106.5,
+  "summary": "伊朗超重量级传奇巨星，2012年伦敦奥运会冠军，两夺世锦赛总成绩金牌并实现亚运会三连冠，以举世无双的超重量级抓举爆发力著称。",
+  "peak_note_en": "Snatch 216kg (WR) / C&J 255kg / Total 465kg @ +105kg (2x Super-Heavyweight Snatch World Record breaker and 3x Asian Games Champion)",
+  "summary_en": "Behdad Salimi (IRI), competing in +105kg. 2012 Olympic Champion, 2x World Champion, and 3x Asian Games Champion who set two official Snatch World Records (214kg and 216kg) in the super-heavyweight division."
+},
+{
+  "id": "xiang-yanmei",
+  "name": "Xiang Yanmei",
+  "name_zh": "向艳梅",
+  "gender": "F",
+  "nation": "CHN",
+  "era_category": "2000-PRESENT",
+  "weight_group": "MIDDLE",
+  "active_years": "2009-2021",
+  "best_class": "69kg / 75kg / 76kg",
+  "og": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 2,
+    "silver": 1,
+    "bronze": 0
+  },
+  "cc": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cg": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wr_count": 0,
+  "peak_note": "抓举129kg / 挺举157kg / 总成绩284kg @ 69kg/76kg (女子69公斤级集奥运会、世锦赛、亚运会、亚锦赛、全运会于一身的“大满贯”霸主)",
+  "peak_coefficient": 104.0,
+  "summary": "中国女子举重中量级领军人物，2016年里约奥运会冠军，蝉联两届世锦赛总成绩金牌与仁川亚运会冠军，以极强的心理素质和稳健的抓挺实力实现全满贯伟业。",
+  "peak_note_en": "Snatch 129kg / C&J 157kg / Total 284kg @ 69kg/76kg (Achieved the historic Grand Slam in the women's 69kg category)",
+  "summary_en": "Xiang Yanmei (CHN), competing in 69kg / 75kg / 76kg. 2016 Olympic Champion, 2x World Champion, 2014 Asian Games Champion, and 2011 Asian Champion, achieving a prestigious Grand Slam in women's middleweight lifting."
+},
+{
+  "id": "hsu-shu-ching",
+  "name": "Hsu Shu-ching",
+  "name_zh": "许淑净",
+  "gender": "F",
+  "nation": "TPE",
+  "era_category": "2000-PRESENT",
+  "weight_group": "LIGHT",
+  "active_years": "2009-2017",
+  "best_class": "53kg",
+  "og": {
+    "gold": 2,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wc": {
+    "gold": 1,
+    "silver": 1,
+    "bronze": 0
+  },
+  "cc": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "cg": {
+    "gold": 1,
+    "silver": 0,
+    "bronze": 0
+  },
+  "wr_count": 1,
+  "peak_note": "抓举101kg / 挺举132kg / 总成绩233kg(WR) @ 53kg (2014仁川亚运打破总成绩世界纪录，奥运会双金大满贯得主)",
+  "peak_coefficient": 106,
+  "summary": "中华台北举重传奇，女子53公斤级大满贯霸主，蝉联2012伦敦与2016里约两届奥运会金牌，并在2014仁川亚运会创下233公斤总成绩世界纪录。",
+  "peak_note_en": "Snatch 101kg / C&J 132kg / Total 233kg (WR) @ 53kg (Broke the Total World Record at the 2014 Asian Games, 2-time Olympic Champion)",
+  "summary_en": "Hsu Shu-ching (TPE), competing in 53kg. 2x Olympic Champion (2012, 2016), 2015 World Champion, and 2014 Asian Games Champion who achieved the Grand Slam and set the historic Total World Record of 233kg."
+}
 ]
