@@ -37,13 +37,13 @@ def main():
     with socketserver.ThreadingTCPServer(server_address, GOATRequestHandler) as httpd:
         url = f"http://127.0.0.1:{port}"
         print("=" * 80)
-        print(" [IWF 举重全历史 GOAT 数据分析系统 - 开源模块化版本]")
-        print(f" > 访问端点: {url}")
-        print(" > 数据核心: 42 位殿堂级巨星库已挂载 (data/athletes.json)")
-        print(" > 算法引擎: 对数边际递减世界纪录平抑模型已激活 (engine/calculator.py)")
-        print(" > 前端终端: 深色科技驾驶舱已就绪 (web/static/)")
-        print(" > 正在自动启动默认浏览器...")
-        print(" > 按 Ctrl + C 终止服务")
+        print(" [IWF All-Time Weightlifting GOAT Analytics System - Open Source Modular Edition]")
+        print(f" > Access Endpoint: {url}")
+        print(" > Data Core: Historical data mounted (data/athletes.json)")
+        print(" > Algorithm Engine: Logarithmic diminishing marginal WR smoothing model activated (engine/calculator.py)")
+        print(" > Frontend Terminal: Dark tech cockpit ready (web/static/)")
+        print(" > Launching default browser automatically...")
+        print(" > Press Ctrl + C to terminate service")
         print("=" * 80)
 
         # 延时唤起浏览器，确保端口监听完全就绪
@@ -52,7 +52,7 @@ def main():
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
-            print("\n[INFO] 接收到退出信号，服务优雅终止。")
+            print("\n[INFO] Exit signal received, service terminated gracefully.")
             httpd.server_close()
             sys.exit(0)
 
